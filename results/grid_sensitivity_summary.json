@@ -1,0 +1,11 @@
+{
+  "intensities": [
+    100,
+    250,
+    475,
+    700,
+    900
+  ],
+  "ratio_MLP_over_LR_at_475": 19.32416724645945,
+  "note": "Absolute kg scales with grid; relative ghost gap stays 100% when claim=0; model ranking unchanged."
+}
