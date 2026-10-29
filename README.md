@@ -29,3 +29,14 @@ Kaggle: open `notebooks/ghost_carbon.ipynb` and Run All.
 
 ## Independence
 Shares **no** code or data with the other env-papers folders.
+
+## Paper type & scope
+Conference short paper presenting a **reproducible audit protocol**. *This paper presents a reproducible audit protocol demonstrated on synthetic/proxy data; a REAL_DATA path is documented for follow-on measurement, not claimed as completed observation.*
+
+**Limitations:** synthetic/PROXY demo numbers only; REAL_DATA slice below is documented, not run; audit-metric contribution, not “first ever”; no journal-tier claim.
+
+## Camera-ready figures
+`python src/make_figures.py` → 300 dpi PNG + PDF + SVG in `results/` (same seeds/CSVs; numbers unchanged).
+
+## REAL_DATA slice recipe (exact, not yet run)
+Replace PROXY with CodeCarbon (`pip install codecarbon`) or Linux RAPL (`/sys/class/powercap/intel-rapl:0/energy_uj`) on the same Digits RF/LR/MLP runs; ≥5 repeats; report median and IQR; log CPU model, region grid intensity source and date in `results/data_manifest.json`.

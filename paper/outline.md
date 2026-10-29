@@ -1,4 +1,4 @@
-# Claimed Green, Metered Gray: Ghost Carbon in Small-Model ML
+# Claimed Green, Metered Gray: Ghost Carbon in “Efficient” Machine Learning
 
 ## Abstract bullets
 - Small ML models are often marketed as “green” or “efficient” without metered emissions.
@@ -34,3 +34,16 @@ Digits; RF/LR/MLP; CodeCarbon else proxy (CPU W × s × gCO₂/kWh); claim basel
 - Table 1: per-model train/infer energy, kgCO₂e, duration
 - Fig 1: claim-vs-metered bar chart
 - Table 2: train share vs infer share
+
+
+## Paper type & scope (q34 upgrade)
+Short conference paper: **reproducible audit protocol** (subtitle tag: Protocol & Synthetic Demonstration).
+
+*This paper presents a reproducible audit protocol demonstrated on synthetic/proxy data; a REAL_DATA path is documented for follow-on measurement, not claimed as completed observation.*
+
+**Limitations.** Synthetic/PROXY demonstration only; REAL_DATA path documented (README) but not run; contribution is an audit metric, not a first discovery; no journal-tier or indexing claim.
+
+## Camera-ready figure captions
+- Fig. 1 (`results/claim_vs_metered.{pdf,svg,png}`): Reported vs. metered footprint per model family on Digits. Grey baseline: the “negligible/unreported” claim encoded as 0 kg. Stacked bars: PROXY-metered training (blue) and inference (orange, dotted) emissions in mg CO₂e; labels give totals. Ghost gap = 100% of metered for every family.
+
+Figures: 300 dpi PNG + vector PDF/SVG, ≥9 pt fonts, Okabe–Ito / viridis-family palettes; regenerate with `python src/make_figures.py` (reads frozen results/seeds, never rewrites CSV/JSON).
