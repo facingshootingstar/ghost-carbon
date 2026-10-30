@@ -1,0 +1,16 @@
+[info] CodeCarbon unavailable (No module named 'codecarbon'); using PROXY estimator.
+[info] CodeCarbon unavailable (No module named 'codecarbon'); using PROXY estimator.
+[info] CodeCarbon unavailable (No module named 'codecarbon'); using PROXY estimator.
+[info] CodeCarbon unavailable (No module named 'codecarbon'); using PROXY estimator.
+[info] torch unavailable (No module named 'torch'); using sklearn MLPClassifier
+[info] CodeCarbon unavailable (No module named 'codecarbon'); using PROXY estimator.
+[info] CodeCarbon unavailable (No module named 'codecarbon'); using PROXY estimator.
+  energy_kwh  emissions_kg         meter  proxy_cpu_w  proxy_gco2_per_kwh phase_model  duration_s  claim_kg  ghost_gap_kg
+3.699398e-06  1.757214e-06 PROXY_labeled         65.0               475.0    RF_train    0.204890       0.0  1.757214e-06
+6.258080e-06  2.972588e-06 PROXY_labeled         65.0               475.0    RF_infer    0.346601       0.0  2.972588e-06
+2.384793e-07  1.132777e-07 PROXY_labeled         65.0               475.0    LR_train    0.013208       0.0  1.132777e-07
+1.177970e-07  5.595359e-08 PROXY_labeled         65.0               475.0    LR_infer    0.006524       0.0  5.595359e-08
+7.715910e-06  3.665057e-06 PROXY_labeled         65.0               475.0   MLP_train    0.427343       0.0  3.665057e-06
+2.813507e-07  1.336416e-07 PROXY_labeled         65.0               475.0   MLP_infer    0.015583       0.0  1.336416e-07
+Wrote /tmp/ghost-rerun/results
+accuracies: {'RF': 0.96, 'LR': 0.9777777777777777, 'MLP': 0.98, 'mlp_backend': 'sklearn'}
