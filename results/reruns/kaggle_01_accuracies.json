@@ -1,0 +1,7 @@
+{
+  "RF": 0.96,
+  "LR": 0.9777777777777777,
+  "MLP": 0.98,
+  "mlp_backend": "sklearn",
+  "source": "Kaggle notebook run (COMPLETE), as reported; RF/LR/MLP rounded 0.96/0.978/0.98"
+}
